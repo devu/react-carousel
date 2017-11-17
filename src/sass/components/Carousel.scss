@@ -1,0 +1,71 @@
+.invisible {visibility: hidden}
+.carousel-container,.carousel-content,.carousel-track {position: relative; display: block}
+
+.carousel-container {
+  margin: 0px 0px 0px 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+
+  .dragging { cursor: pointer; cursor:hand }
+  .carousel-content .carousel-track {transform: translate3d(0,0,0)}
+
+  .carousel-slider {
+    overflow: hidden;
+    margin: auto;
+
+    .carousel-content {
+      width: 6830.88px;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+      margin: 0;
+      padding: 0;
+      background-color: #444;
+      touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+
+      .carousel-item {
+        background-color: rgba(197, 45, 45, 0.5);
+        color: white;
+        display: block;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+        padding: 10px;
+        opacity: 0.5;
+
+        &.selected {
+          opacity: 1;
+        }
+
+        .item {
+          width: 200px;
+          text-align: center; 
+        }
+
+        .item-content {
+          user-select: none;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  .carousel-nav {
+    user-select: none;
+    display: block;
+
+    .prev {
+      position: absolute;
+      left: -10px;
+      top: 5px;
+    }
+
+    .next {
+      position: absolute;
+      left: calc(90% + 10px);
+      top: 5px;
+    }
+  }
+}

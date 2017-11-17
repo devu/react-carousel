@@ -1,0 +1,27 @@
+//@import url( 'https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import "./components/Content";
+@import "./components/App";
+@import "./components/Footer";
+@import "./components/Header";
+@import "./components/Carousel";
+
+$font-stack: 'Open Sans', sans-serif;
+
+html {
+    height: 100%;
+    font-family: $font-stack;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
