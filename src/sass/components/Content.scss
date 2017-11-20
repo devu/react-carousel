@@ -1,34 +1,64 @@
-.content {
-    padding: 20px;
-    margin: auto;
-    width: 90%;
+.content-wrapper {
     background-color: #333;
     flex: 1 0 auto;
-    font-size: 40px;
-    color: #fff;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
+    .content {
+        padding: 20px;
+        margin: auto;
+        width: 90%;
+        background-color: #333;
+        flex: 1 0 auto;
+        font-size: 40px;
+        color: #fff;
+        align-items: center;
 
-    span {
-        max-width: 50%;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-    img {
-        height: auto;
-    }
-
-    input {
-        padding: 10px;
-        background-color: #2f2f2f;
-        border: none;
-        font-size: 24px;
-        color: #535353;
-        text-align: center;
-
-        &:focus {
-            outline-color: #1e1e1e;
+        span {
+            max-width: 50%;
         }
+
+        img {
+            height: auto;
+        }
+
+        input {
+            padding: 10px;
+            background-color: #2f2f2f;
+            border: none;
+            font-size: 24px;
+            color: #535353;
+            text-align: center;
+
+            &:focus {
+                outline-color: #1e1e1e;
+            }
+        }
+
+        .day-carousel {
+            background-color: rgba(201, 34, 25, 0.3);
+        }
+        
+        .time-carousel {
+            background-color: rgba(201, 34, 25, 0.6);
+        }
+
+    }
+
+    .cta-button {
+        background-color: #7e1515;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 240px;
+        padding: 10px;
+        font-size: 26px;
+        color: #fff;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
+
